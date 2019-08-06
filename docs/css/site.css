@@ -1,17 +1,13 @@
-@import "typography";
-
 *, *:before, *:after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
 
 html {
   box-sizing: border-box;
-  font: 14px/1.5 "Fira Sans", Georgia, serif;
-}
+  font: 14px/1.5 "Fira Sans", Georgia, serif; }
+
 .site {
   max-width: 60em;
   margin: 0 auto;
-  padding: 2em;
-}
+  padding: 2em; }
