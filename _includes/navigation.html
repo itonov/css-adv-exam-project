@@ -3,7 +3,7 @@
 		{% for item in site.navigation %}
 		<li {% if item.url== page.url %} class="selected" {% endif %}>
 			<a href="{{ site.baseurl }}{{ item.url }}">
-				{% if item.icon %}<i class="fas {{ item.icon }}"></i>{% endif %}
+<!--				{% if item.icon %}<i class="fas {{ item.icon }}"></i>{% endif %}-->
 				{{ item.text }}
 			</a>
 		</li>
