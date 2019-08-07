@@ -1,0 +1,98 @@
+:root {
+  --color-body-bgrd: #FFF;
+  --color-link-default: #369;
+  --spacing-layout-items: 2em; }
+
+a {
+  text-decoration: none; }
+
+.site-header {
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-layout-items);
+  padding-bottom: calc( var(--spacing-layout-items) / 2); }
+  @media (max-width: 1023px) {
+    .site-header {
+      text-align: center; } }
+
+.site-title {
+  margin: 0;
+  padding: 0;
+  font-size: 2em; }
+  @media (max-width: 1023px) {
+    .site-title {
+      text-align: center; } }
+  .site-title a {
+    display: block;
+    padding: 0.5em 0; }
+
+.site-nav {
+  display: flex;
+  align-items: center; }
+  .site-nav > ul {
+    display: flex;
+    padding: 0; }
+    @media (max-width: 1023px) {
+      .site-nav > ul {
+        flex-wrap: wrap;
+        justify-content: center; }
+        .site-nav > ul li:not(:last-child) {
+          margin-bottom: 0.5em; } }
+    .site-nav > ul ul {
+      display: block;
+      pointer-events: none;
+      padding: 0.5em;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 15em;
+      z-index: 1; }
+      .site-nav > ul ul li {
+        opacity: 0;
+        transform: translateY(-1em);
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; }
+  .site-nav li {
+    display: block;
+    list-style: none outside;
+    padding: 0 0.5em;
+    position: relative; }
+    .site-nav li li {
+      padding: 0; }
+      .site-nav li li:not(:last-child) {
+        margin-bottom: 0.5em; }
+    .site-nav li:hover ul {
+      z-index: 100;
+      pointer-events: all; }
+    .site-nav li:hover li {
+      opacity: 1;
+      transform: translateY(0); }
+
+.site-nav > li:first-child {
+  padding-left: 0; }
+
+.site-nav a {
+  display: block;
+  padding: 0.5em 1em;
+  border-radius: 0.3em;
+  background: #EEE; }
+
+.site-nav li:hover > a,
+.site-nav li.selected > a,
+.site-nav a:hover {
+  background: var(--color-link-default);
+  color: var(--color-body-bgrd); }
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font: 14px/1.5 "Fira Sans", Georgia, serif; }
+
+.site {
+  max-width: 60em;
+  margin: 0 auto;
+  padding: 2em; }

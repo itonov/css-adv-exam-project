@@ -1,4 +1,8 @@
+@import "variables";
+@import "mixins";
 @import "typography";
+@import "header";
+@import "navigation";
 
 *, *:before, *:after {
   margin: 0;
@@ -10,8 +14,11 @@ html {
   box-sizing: border-box;
   font: 14px/1.5 "Fira Sans", Georgia, serif;
 }
+
 .site {
   max-width: 60em;
   margin: 0 auto;
   padding: 2em;
+
+
 }
