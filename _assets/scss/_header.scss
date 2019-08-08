@@ -4,10 +4,15 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: var(--spacing-layout-items);
-    padding-bottom: calc( var(--spacing-layout-items) / 2 );
+    padding-bottom: calc(var(--spacing-layout-items) / 2);
 
     @include screen-size(mobile) {
       text-align: center;
+    }
+
+    @include screen-size(phone) {
+      flex-wrap: wrap;
+      justify-content: center;
     }
   }
 

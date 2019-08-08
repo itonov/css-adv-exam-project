@@ -1,3 +1,15 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font: 14px/1.5 "Fira Sans", Georgia, serif;
+}
+
 a {
   text-decoration: none;
+  color: var(--color-link-default);
 }

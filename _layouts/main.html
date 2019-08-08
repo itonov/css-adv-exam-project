@@ -11,16 +11,14 @@
 
 	<title>{{ site.title }}</title>
 
-<!--	<link rel="stylesheet" href="{{ site.baseurl }}/fontawesome/css/all.min.css">-->
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/site.css">
-	<!--	<script src="{{ site.baseurl }}/scripts/site.js"></script>-->
 </head>
 <body class="
     {% if page.title %}page page-{{ page.title | slugify }}{% endif %}
     {% if post.title %}post{% endif %}
     {% if page.home %}home{% endif %}
 ">
-<div class="site">
+<div class="site main-layout">
 
 	<header class="site-header">
 		{% if page.home == true %}
@@ -46,7 +44,11 @@
 		{{content}}
 
 	</main>
-
+	{% if page.sidebar == true %}
+	<aside class="site-sidebar">
+		{% include sidebar.html %}
+	</aside>
+	{% endif %}
 
 	<footer class="site-footer">
 		<p>All rights reserved &copy; {{ site.title }}</p>
