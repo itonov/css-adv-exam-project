@@ -1,8 +1,4 @@
 @import "variables";
-@import "mixins";
-@import "typography";
-@import "header";
-@import "navigation";
 
 *, *:before, *:after {
   margin: 0;
@@ -19,6 +15,9 @@ html {
   max-width: 60em;
   margin: 0 auto;
   padding: 2em;
-
-
 }
+
+@import "mixins";
+@import "typography";
+@import "header";
+@import "navigation";
