@@ -1,0 +1,37 @@
+---
+layout: main
+permalink: /gallery/
+images:
+- alt: volcano
+  src: https://images.unsplash.com/photo-1563195127-681ff3349549?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80
+  aspectRatio: landscape
+- alt: sunset
+  src: https://images.unsplash.com/photo-1563216368-5b6a40648062?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80
+  aspectRatio: landscape
+- alt: waterfall
+  src: https://images.unsplash.com/photo-1560269570-bb65ba82fcf6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60
+  aspectRatio: portrait
+- alt: night volcano
+  src: https://images.unsplash.com/photo-1563569612166-d2aaeaaa5294?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60
+  aspectRatio: landscape
+- alt: far sunset
+  src: https://images.unsplash.com/photo-1563454758691-702be3d2e2b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60
+  aspectRatio: portrait
+- alt: lake forest
+  src: https://images.unsplash.com/photo-1563673708858-3a0680eaf5d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60
+  aspectRatio: portrait
+- alt: winter stream
+  src: https://images.unsplash.com/photo-1560728827-1910835c6761?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60
+  aspectRatio: portrait
+---
+
+<section>
+	<h4>Some cool pictures from unsplash.com to fill gallery grid!</h4>
+	<ul class="gallery-nature">
+		{% for item in page.images %}
+		<li class="{{item.aspectRatio}}">
+			<img src="{{item.src}}" alt="{{item.alt}}">
+		</li>
+		{% endfor %}
+	</ul>
+</section>

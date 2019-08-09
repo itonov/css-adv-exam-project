@@ -52,7 +52,7 @@ exclude:
 navigation:
   - url: /
     text: Index
-  - url: /about/
-    text: About
   - url: /gallery/
     text: Gallery
+  - url: /about/
+    text: About

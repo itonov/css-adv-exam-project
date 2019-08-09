@@ -18,9 +18,16 @@
     {% if post.title %}post{% endif %}
     {% if page.home %}home{% endif %}
 ">
-<div class="site main-layout">
+<div class="
+	{% if page.sidebar %}
+	site
+	main-layout
+		{% else %}
+		site
+	{% endif %}
+">
 
-	<header class="site-header">
+	<header class="		site-header">
 		{% if page.home == true %}
 		<h1 class="site-title">
 			<a href="{{ site.baseurl }}/">{{site.title}}</a>

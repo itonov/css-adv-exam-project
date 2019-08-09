@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Grenze:400,500|Lato:400,700&display=swap');
+
 *, *:before, *:after {
   margin: 0;
   padding: 0;
@@ -6,10 +8,34 @@
 
 html {
   box-sizing: border-box;
-  font: 14px/1.5 "Fira Sans", Georgia, serif;
+  font: 14px/1.5 "Lato", Georgia, serif;
+  min-height: 100vh;
+
+  @include screen-size(laptop) {
+    font-size: 15px;
+  }
+
+  @include screen-size(desktop) {
+    font-size: 16px;
+  }
+
+  @include screen-size(desktop-large) {
+    font-size: 17px;
+  }
 }
 
 a {
   text-decoration: none;
   color: var(--color-link-default);
+}
+
+.site-title,
+h1, h2, h3, h4, h5, h6 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  font-family: Grenze, serif;
+}
+
+li {
+  list-style: none outside;
 }

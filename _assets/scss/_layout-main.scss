@@ -8,31 +8,30 @@
     margin-bottom: var(--spacing-layout-items);
   }
 
-  @include screen-size(laptop) {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-column-gap: 4em;
-    grid-template-areas:
-            "header header"
-            "main sidebar"
-            "footer footer";
+  &.main-layout {
+    @include screen-size(laptop) {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-column-gap: 4em;
+      grid-template-areas: "header header" "main sidebar" "footer footer";
 
-    .site-header {
-      grid-area: header;
-    }
+      .site-header {
+        grid-area: header;
+      }
 
-    .site-main {
-      grid-area: main;
-      padding: 0.5em;
-    }
+      .site-main {
+        grid-area: main;
+        padding: 0.5em;
+      }
 
-    .site-sidebar {
-      grid-area: sidebar;
-      padding: 0.5em;
-    }
+      .site-sidebar {
+        grid-area: sidebar;
+        padding: 0.5em;
+      }
 
-    .site-footer {
-      grid-area: footer;
+      .site-footer {
+        grid-area: footer;
+      }
     }
   }
 }

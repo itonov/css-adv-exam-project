@@ -1,0 +1,41 @@
+.gallery-nature {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  & .portrait img {
+    height: 100%;
+    width: auto;
+  }
+
+  & .landscape img {
+    width: 100%;
+    height: auto;
+  }
+
+  @include screen-size(laptop) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.8em;
+    grid-auto-flow: dense;
+
+    li {
+      display: block;
+      overflow: hidden;
+
+      &.portrait {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+
+      &.landscape {
+        grid-column: span 2;
+        grid-row: span 1;
+      }
+    }
+  }
+}
+
+
