@@ -145,6 +145,10 @@ li {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
+  .gallery-nature li {
+    transition: transform 0.3s ease-in-out; }
+    .gallery-nature li:hover {
+      transform: scale(1.1); }
   .gallery-nature .portrait img {
     height: 100%;
     width: auto; }
