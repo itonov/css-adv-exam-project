@@ -1,0 +1,20 @@
+.gallery-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  & li {
+    flex: 0 0 32%;
+
+    &.portrait img {
+      height: 100%;
+      width: auto;
+    }
+
+    &.landscape img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

@@ -56,15 +56,12 @@ navigation:
   - url: /gallery/
     text: Gallery
     icon: fa-th
-  - url: /about/
-    text: About
-    icon: fa-info-circle
   - text: More
     icon: fa-arrow-circle-right
     subUrls:
-      - url: /about/
-        text: About
-        icon: fa-info-circle
+      - url: /gallery-flex/
+        text: Gallery Flex
+        icon: fa-th-large
       - url: /about/
         text: About
         icon: fa-info-circle
