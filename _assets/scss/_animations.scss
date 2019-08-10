@@ -1,0 +1,11 @@
+@keyframes loadSlide {
+  from {
+    opacity: 0;
+    transform: translate(-15em, -2em);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
