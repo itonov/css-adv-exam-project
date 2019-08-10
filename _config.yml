@@ -56,7 +56,8 @@ navigation:
   - url: /gallery/
     text: Gallery
     icon: fa-th
-  - text: More
+  - url: \#
+    text: More
     icon: fa-arrow-circle-right
     subUrls:
       - url: /gallery-flex/
