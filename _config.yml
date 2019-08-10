@@ -52,7 +52,12 @@ exclude:
 navigation:
   - url: /
     text: Index
+    icon: fa-home
   - url: /gallery/
     text: Gallery
+    icon: fa-th
   - url: /about/
     text: About
+    icon: fa-info-circle
+  - text: More
+    icon: fa-arrow-circle-down

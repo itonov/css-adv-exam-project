@@ -139,21 +139,20 @@ li {
     .site-nav li:hover li {
       opacity: 1;
       transform: translateY(0); }
-
-.site-nav > li:first-child {
-  padding-left: 0; }
-
-.site-nav a {
-  display: block;
-  padding: 0.5em 1em;
-  border-radius: 0.3em;
-  background: #EEE; }
-
-.site-nav li:hover > a,
-.site-nav li.selected > a,
-.site-nav a:hover {
-  background: var(--color-link-default);
-  color: var(--color-body-bgrd); }
+  .site-nav a {
+    display: block;
+    padding: 0.5em 1em;
+    border-radius: 0.3em;
+    background: #EEE; }
+  .site-nav > li:first-child {
+    padding-left: 0; }
+  .site-nav li:hover > a,
+  .site-nav li.selected > a,
+  .site-nav a:hover {
+    background: var(--color-link-default);
+    color: var(--color-body-bgrd); }
+  .site-nav li i {
+    margin-right: 0.4em; }
 
 .gallery-nature {
   padding: 0;
