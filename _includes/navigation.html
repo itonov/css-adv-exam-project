@@ -2,10 +2,22 @@
 	<ul>
 		{% for item in site.navigation %}
 		<li {% if item.url== page.url %} class="selected" {% endif %}>
-			<a href="{{ site.baseurl }}{{ item.url }}">
+			<a href="{{ site.baseurl }}{{ item.url }}" {% if item.subUrls %} class="expandable-button" {%endif%}>
 				<i class="fas {{ item.icon }}"></i>
 				{{ item.text }}
 			</a>
+			{% if item.subUrls %}
+			<ul>
+				{% for subItem in item.subUrls %}
+				<li {% if subItem.url== page.url %} class="selected" {% endif %}>
+					<a href="{{ site.baseurl }}{{ subItem.url }}">
+						<i class="fas {{ subItem.icon }}"></i>
+						{{ subItem.text }}
+					</a>
+				</li>
+				{% endfor %}
+			</ul>
+			{% endif %}
 		</li>
 		{% endfor %}
 	</ul>

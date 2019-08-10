@@ -18,11 +18,12 @@
     ul {
       display: block;
       pointer-events: none;
-      padding: 0.5em;
+      padding-top: 0.5em;
       position: absolute;
       top: 100%;
       left: 0;
       width: 15em;
+      max-width: 100%;
       z-index: 1;
 
       li {
@@ -55,6 +56,14 @@
       li {
         opacity: 1;
         transform: translateY(0);
+      }
+    }
+
+    & a.expandable-button:hover {
+      & i {
+        -moz-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
       }
     }
   }

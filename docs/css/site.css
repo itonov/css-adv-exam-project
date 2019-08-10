@@ -115,11 +115,12 @@ li {
     .site-nav > ul ul {
       display: block;
       pointer-events: none;
-      padding: 0.5em;
+      padding-top: 0.5em;
       position: absolute;
       top: 100%;
       left: 0;
       width: 15em;
+      max-width: 100%;
       z-index: 1; }
       .site-nav > ul ul li {
         opacity: 0;
@@ -139,6 +140,8 @@ li {
     .site-nav li:hover li {
       opacity: 1;
       transform: translateY(0); }
+    .site-nav li a.expandable-button:hover i {
+      transform: rotate(90deg); }
   .site-nav a {
     display: block;
     padding: 0.5em 1em;
